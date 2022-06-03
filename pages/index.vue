@@ -6,24 +6,27 @@
     <!-- Search -->
     <div class="container search">
       <input
-        @keyup.enter="$fetch"
+        v-model.lazy="searchInput"
         type="text"
         placeholder="Search"
-        v-model.lazy="searchInput"
+        @keyup.enter="$fetch"
       />
-      <button @click="clearSearch" v-show="searchInput !== ''" class="button">
+      <button v-show="searchInput !== ''" class="button" @click="clearSearch">
         Clear Search
       </button>
     </div>
 
+    <!-- Loading -->
+    <Loading v-if="$fetchState.pending" />
+
     <!-- Movies -->
-    <div class="container movies">
+    <div v-else class="container movies">
       <!-- Searched Movies -->
       <div v-if="searchInput !== ''" id="movie-grid" class="movies-grid">
         <div
-          class="movie"
           v-for="(movie, index) in searchedMovies"
           :key="index"
+          class="movie"
         >
           <div class="movie-img">
             <img
@@ -60,7 +63,7 @@
       </div>
       <!-- Now Streaming -->
       <div v-else id="movie-grid" class="movies-grid">
-        <div class="movie" v-for="(movie, index) in movies" :key="index">
+        <div v-for="(movie, index) in movies" :key="index" class="movie">
           <div class="movie-img">
             <img
               :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`"
@@ -148,6 +151,11 @@ export default {
 
 <style lang="scss">
 .home {
+  .loading {
+    padding-top: 120px;
+    align-items: flex-start;
+  }
+
   .search {
     display: flex;
     padding: 32px 16px;
