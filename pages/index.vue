@@ -46,7 +46,7 @@
             <p class="release">
               Released:
               {{
-                new Date(movie.release_date).toLocaleString('zh-TW', {
+                new Date(movie.release_date).toLocaleString('en-US', {
                   month: 'long',
                   day: 'numeric',
                   year: 'numeric',
@@ -82,7 +82,7 @@
             <p class="release">
               Released:
               {{
-                new Date(movie.release_date).toLocaleString('zh-TW', {
+                new Date(movie.release_date).toLocaleString('en-US', {
                   month: 'long',
                   day: 'numeric',
                   year: 'numeric',
