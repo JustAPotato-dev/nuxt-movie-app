@@ -1,68 +1,59 @@
-# nuxt-movie-app
+<a name="readme-top"></a>
 
-## Build Setup
+<div align="center">
+  <h3 align="center">Nuxt movie app</h3>
 
-```bash
-# install dependencies
-$ npm install
+  <p align="center">
+    A movie app built with NuxtJS
+    <br />
+    <a href="https://github.com/JustAPotato-dev/netflix-redesign-nextjs"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://netflix-redesign-nextjs.vercel.app/login">View Demo</a>
+  </p>
+</div>
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+<!-- ABOUT THE PROJECT -->
 
-# generate static project
-$ npm run generate
-```
+## About The Project
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+[![Nuxt movie app][product-screenshot]](https://example.com)
 
-## Special Directories
+This is a movie app built with NuxtJS. It uses the [TMDB API](https://developers.themoviedb.org/3/getting-started/introduction) to fetch movies and TV shows.
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `assets`
+### Built With
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+- [![Nuxt][nuxt.js]][nuxt-url]
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `components`
+<!-- ACKNOWLEDGMENTS -->
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## Acknowledgments
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+- [Build & Deploy a Movie App With NuxtJS | NuxtJS Crash Course (2021)](https://www.youtube.com/watch?v=IzLIXyZkKAA)
+- [IMDB](https://www.imdb.com/)
 
-### `layouts`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+<!-- MARKDOWN LINKS & IMAGES -->
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+[product-screenshot]: docs/images/screenshot.jpg
+[nuxt.js]: https://img.shields.io/badge/Nuxt.js-00C58E?style=for-the-badge&logo=nuxt.js&logoColor=white
+[nuxt-url]: https://nuxtjs.org/
